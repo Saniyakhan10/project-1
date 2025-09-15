@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie review website</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #div_1 {
+            background-color: #633c87;
+            display: flex;
+            align-items: center;
+            height: 15px;
+            padding-left: 5px;
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 8px;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+        
+        #div_1 a:hover {
+            color: plum;
+        }
+        
+        #div_1 a:active {
+            color: red;
+        }
+        
+        #div_2 {
+            background-color: #c4a2e3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px;
+        }
+        
+        #div_2 h1 {
+            font-size: 18px;
+            margin: 2px;
+        }
+        
+        #div_2 p {
+            font-size: 6px;
+            margin: 0;
+            color: #333;
+            font-style: italic;
+        }
+        
+        #div_2 h1:hover {
+            color: #682121;
+        }
+        
+        .banner {
+            background: url(https://static.vecteezy.com/system/resources/thumbnails/044/514/545/small_2x/background-a-movie-theater-where-love-stories-are-unfolding-on-the-big-screen-and-the-smell-of-popcorn-fills-the-air-photo.jpg) no-repeat center;
+            color: white;
+            height: 300px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .banner h1 {
+            font-size: 50px;
+            padding: 20px;
+        }
+        
+        .banner p {
+            font-size: 11px;
+        }
+        
+        .reviews {
+            background-color: #9d86b3;
+            padding: 10px;
+            text-align: center;
+            gap: 20px;
+            display: grid;
+        }
+        
+        .review {
+            border: 1px solid #ccc;
+            padding: 15px;
+            box-shadow: 2px 2px 8px gba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
+        .review img {
+            width: 90px;
+            border: 2px solid #333;
+            padding: 1px;
+            box-shadow: hsl(0, 5%, 41%);
+        }
+        
+        .review h2 {
+            color: darkblue;
+            margin-top: 10px;
+        }
+        
+        .review p {
+            text-align: justify;
+            color: #333;
+        }
+        
+        .review img:hover {
+            opacity: 0.8;
+        }
+        
+        .review a {
+            color: crimson;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .genres {
+            background-color: #c4a2e3;
+            padding: 30px;
+        }
+        
+        .genres h2 {
+            margin-bottom: 10px;
+        }
+        
+        .genres ul {
+            list-style-type: square;
+            padding: 10px;
+        }
+        
+        .genres ul:hover {
+            list-style-type: circle;
+        }
+        
+        .contact {
+            padding: 40px;
+            background-color: #9262c0;
+        }
+        
+        .contact form {
+            max-width: 400px;
+            margin: auto;
+        }
+        
+        .contact input,
+        .contact textarea {
+            width: 80px;
+            padding: 8px 50px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            background: #ac93c4;
+            color: white
+        }
+        
+        .contact button {
+            padding: 5px 15px;
+            background: rgb(52, 52, 112);
+            color: white;
+            border: none;
+        }
+        
+        .contact button:hover {
+            background: #2f1048;
+        }
+        
+        footer {
+            background-color: #5a1f91;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            cursor: pointer;
+        }
+        
+        footer .social i {
+            margin: 0 10px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        footer .social i:hover {
+            color: rgb(72, 33, 72);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div id="div_1">
+            <a href="#">Home |</a>
+            <a href="#">Reviews |</a>
+            <a href="#">Genres |</a>
+            <a href="#">Contact </a>
+        </div>
+        <div id="div_2">
+            <h1>The Review Reel</h1>
+            <p>“Because Every Movie Tells a Story”</p>
+        </div>
+
+    </header>
+    <section class="banner">
+        <h1>Movie Reviews Hub</h1>
+        <p>Discover reviews, ratings, and genres of your favorite movies here</p>
+    </section>
+
+    <section class="reviews">
+
+        <div class="review">
+            <img src="https://i.pinimg.com/736x/6c/95/26/6c95264e81cf66b9fe6273ca5e8a5fe9.jpg" alt="Movie review">
+            <h2>Inception</h2>
+            <p><strong>Reviewer:</strong> John Doe | <em>2025-09-11</em></p>
+            <p>A mind-bending thriller that explore dreams within dreams. Stunning visuals and a gripping story make it a masterpiece!</p>
+            <a href="#">Read more</a>
+        </div>
+
+        <div class="review">
+            <img src=" https://lumiere-a.akamaihd.net/v1/images/p_avengersendgame_19751_e14a0104.jpeg?region=0%2C0%2C540%2C810" alt="Movie image">
+            <h2>Avengers: Endgame</h2>
+            <p><strong>Reviewer:</strong> John Smith | <em>2025-09-10</em></p>
+            <p> An epic conclusion to the Marvel saga. Full of action, emotion, and breathtaking visuals...</p>
+            <a href="#">Read more</a>
+        </div>
+
+    </section>
+
+    <section class="genres">
+        <h2>Movie Genres</h2>
+        <ul>
+            <li>Action</li>
+            <li>Comedy</li>
+            <li>Drama</li>
+            <li>Sci-Fi</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name " required><br><input type="email" placeholder="Your Email" required><br><input type="text" placeholder="Your Favorite Movie"><br>
+            <button type="submit">Submit</button></form>
+    </section>
+
+
+    <footer>
+        <p>&copy: 2025 My Movie Reviews | All Rights Reserved</p>
+        <div class="social">
+            <i class="fab fa-facebook"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></div>
+    </footer>
+</body>
+
+</html>

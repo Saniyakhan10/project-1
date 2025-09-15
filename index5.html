@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: aliceblue;
+        }
+        
+        #div_1 {
+            background-color: cadetblue;
+            height: 20px;
+            padding-left: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        a {
+            color: black;
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            color: rgb(47, 74, 74);
+        }
+        
+        a:active {
+            color: red;
+        }
+        
+        #div_2 {
+            background-color: rgb(5, 81, 81);
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding: 5px;
+            flex-direction: column;
+        }
+        
+        h1 {
+            font-size: 35px;
+            margin: 2px;
+        }
+        
+        p {
+            font-size: 15px;
+            margin: 2px;
+            font-style: italic;
+        }
+        
+        section {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 98%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        section h2 {
+            margin-bottom: 10px;
+            color: #222;
+        }
+        
+        .about {
+            align-items: center;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .about img {
+            width: 300px;
+            height: 150px;
+            border: 1px solid #333;
+            border-radius: 50%;
+        }
+        
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid#aaa;
+            border-radius: 3px;
+        }
+        
+        .contact button {
+            background: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .contact button:hover {
+            background: #555;
+        }
+        
+        footer {
+            text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="div_1">
+            <a href="#">Home </a>
+            <a href="#">About </a>
+            <a href="#">Skills </a>
+            <a href="#">Project </a>
+            <a href="#">Contact </a>
+
+        </div>
+        <div id="div_2">
+            <h1>Hi, I'am Saniya Khan</h1>
+            <p>| Aspiring Software Developer |</p>
+        </div>
+    </header>
+
+
+    <section class="about">
+        <img src="pp.jpg" alt="Portfolio photo">
+        <div>
+            <h2>About Me</h2>
+            <p>Hello! I'm Saniya Khan, a first-year college student passionate about technology and problem-solving. Currently, I'm learning Java and Data Structures & Algorithms (DSA) to strengthen my programming foundation. Alongside, I'm exploring Web
+                Development to build creative and user-friendly projects. I believe in continuous learning and enjoy taking on new challenges that help me grow as a developer.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Java & DSA</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>AI</li>
+            <li>C programming</li>
+        </ul>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <p>Here are some demo projects:</p>
+        <a href="index3.html" target="_blank"></a>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form>
+
+            <label for="name">Name</label><br>
+            <input type="text" placeholder="Your name"><br>
+            <label for="email">Email</label><br>
+            <input type="email" placeholder="Enter your email"><br>
+            <label for="your message">Message</label><br>
+            <textarea rows="4" placeholder="Your message"></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>&copy:2025 My Portfolio</p>
+    </footer>
+
+
+
+</body>
+
+</html>
+
+</html>

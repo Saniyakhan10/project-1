@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore Homepage</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        #div_1 {
+            background-color: rgb(28, 17, 17);
+            height: 20px;
+            display: flex;
+            padding-left: 5px;
+            align-items: center;
+        }
+        
+        a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            color: rgb(225, 52, 86)
+        }
+        
+        #div_2 {
+            background-color: darkgrey;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 5px;
+            height: 100px;
+        }
+        
+        #div_2 h1 {
+            font-size: 45px;
+            margin: 2px;
+        }
+        
+        #div_2 p {
+            font-size: 11px;
+            margin: 0;
+            font-style: italic;
+        }
+        
+        .banner {
+            background: url(https://images.pexels.com/photos/185764/pexels-photo-185764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center;
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            align-content: center;
+        }
+        
+        .banner h1 {
+            font-size: 30px;
+            padding: 20px;
+        }
+        
+        .banner p {
+            font-size: 15px;
+        }
+        
+        .banner h1:hover {
+            color: darkred
+        }
+        
+        .books {
+            background-color: darkgrey;
+            padding: 30px;
+        }
+        
+        .books h2 {
+            margin-bottom: 10px;
+        }
+        
+        .books ul {
+            list-style-type: square;
+            padding: 10px;
+        }
+        
+        .books ul:hover {
+            list-style-type: circle;
+        }
+        
+        .contact {
+            background-color: rgb(71, 68, 68);
+            padding: 20px;
+            width: 100%;
+            margin: 0;
+        }
+        
+        .Contact {
+            background-color: darkgrey;
+        }
+        
+        .contact h1 {
+            margin-left: 20px;
+            padding-top: 20px;
+        }
+        
+        .contact label {
+            margin-left: 20px;
+            font-weight: bold;
+            padding-top: 5px;
+            margin-top: 10px;
+            display: block;
+        }
+        
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+        
+        .contact input:focus {
+            border-color: black;
+        }
+        
+        .contact button {
+            width: 100%;
+            padding: 15px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .contact button:hover {
+            background-color: #7d0606;
+        }
+        
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .content {
+            margin: 0;
+            padding: 20px;
+            background-color: rgb(71, 68, 68);
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .featured-books {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #e9eef4;
+        }
+        
+        .price {
+            color: #e74c3c;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <div id="div_1">
+            <a href="#">Home </a>
+            <a href="#">Categories </a>
+            <a href="#">Bestsellers </a>
+            <a href="#">Contact </a>
+        </div>
+
+        <div id="div_2">
+            <h1>Aura Reads</h1>
+            <p>Where every books finds its reader</p>
+        </div>
+
+    </header>
+
+    <section class="banner">
+        <div>
+            <h1>Welcome to Aura Reads</h1>
+            <p>Where words meets wonder</p>
+        </div>
+    </section>
+
+    <section class="books">
+
+        <h2>Book Categories</h2>
+
+        <ul>
+            <li>Fiction</li>
+            <li>Non-fiction</li>
+            <li>Comics</li>
+            <li>Kids</li>
+        </ul>
+
+    </section>
+
+    <div class="content">
+        <div class="featured-books">
+            <h2>Featured-Books</h2>
+            <table>
+                <tr>
+                    <th>Cover</th>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td><img src="https://m.media-amazon.com/images/I/71TVrIGLT4S._UF1000,1000_QL80_.jpg" alt="Book" width="100"></td>
+                    <td>The hidden world</td>
+                    <td>Fiction</td>
+                    <td class="price">$299</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1440185594i/26141788.jpg" alt="Book" width="100"></td>
+                    <td>Science of mind Simplified</td>
+                    <td>Science</td>
+                    <td class="price">$199</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="contact">
+        <div class="Contact">
+            <h1>Contact Us</h1>
+
+            <form>
+                <label for="name">Name</label><br>
+                <input type="text" id="text" placeholder="Enter your Name"><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" placeholder="Enter your Email"><br>
+
+                <label for="Fav movie">Favorite Movie</label><br>
+                <textarea rows="4" placeholder="Your message"></textarea><br><br>
+
+                <button type="submit ">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy2025 Aura Reads</p>
+    </footer>
+</body>
+
+</html>
